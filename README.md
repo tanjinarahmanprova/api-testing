@@ -125,9 +125,9 @@ newman run CollectionName.json -e EnvironmentName.json -r cli,htmlextra
 ```
 newman run Tanjina_01634816794.postman_collection.json -e Tanjina_01634816794.postman_environment.json -r cli,htmlextra
 ```
-![r1](https://github.com/user-attachments/assets/21fb8ffb-0262-4e7b-8f9d-af95e435169c)
-![r2](https://github.com/user-attachments/assets/65c9efe8-7f2c-4c9c-abce-8a6451415624)
-![r3](https://github.com/user-attachments/assets/4065e9be-248f-4395-9be2-344c37e87cf9)
+![rp1](https://github.com/user-attachments/assets/5a52d1b4-ecbf-419a-adab-2f48241390fa)
+![rp2](https://github.com/user-attachments/assets/6f28ce75-0136-435b-996e-6df9fd84251d)
+![rp3](https://github.com/user-attachments/assets/13eccd3a-bbce-4f51-a235-55a15738eb9e)
 
 ## Contact
 For questions or feedback, please feel free to reach out:
