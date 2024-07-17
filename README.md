@@ -12,13 +12,20 @@
 - [Project Installation Steps](#project-installation-steps)
 - [API Documentation](#api-documentation)
 - [Description of API calls and tests](#description-of-api-calls-and-tests)
+    - [Get Student Info](#get-student-info)
+    - [Create Student](#get-booking-info)
+    - [Get Specific Student's Info](#get-specific-student's-info)
+    - [Create Technical Skills](#create-technical-skills)
+    - [Create Student Address](#create-student-address)
+    - [Get Final Student Details](#get-final-student-details)
+    
 - [Report Generation](#report-generation)
     - [Process of Report Generation](#process-of-report-generation)
     - [Report of the project](#report-of-the-project)
 - [Contact](#contact)
 
 ## Overview
-This repository demonstrates API testing using Postman and Newman. The tests cover a range of HTTP methods, including POST, GET, DELETE, and PUT, ensuring a thorough assessment of the API's capabilities.
+This repository demonstrates API testing using Postman and Newman. The tests cover a range of HTTP methods ensuring a thorough assessment of the API's capabilities.
 
 
 
@@ -52,7 +59,7 @@ Follow these steps to set up and start using the framework
 - [Fork](https://github.com/tanjinarahmanprova/api-testing.git) the repository.
 - Clone
 ```
-git clone https://github.com/tanjinarahmanprova/api-testing.git
+git https://github.com/tanjinarahmanprova/api-testing.git
 ```
 - Import the project into postman.
 - Make any desired changes or additions to the project.
@@ -60,9 +67,42 @@ git clone https://github.com/tanjinarahmanprova/api-testing.git
 ## API Documentation
 - [Postman API Documentation](https://documenter.getpostman.com/view/32325704/2sA3e1BqSV)
 
-
 ## Description of API calls and tests
+### Get Student Info
+GET method is used to fetch student info.  Some tests are performed for status code validation and length of the response.
 
+![g1](https://github.com/user-attachments/assets/0ad433a2-2979-437c-b1ba-9de6645f8640)
+![g2](https://github.com/user-attachments/assets/3db14dff-82d1-4386-bb0a-8cef799a198c)
+### Create Student
+POST method is used to create student. Dynamic data is generated using Pre-request script and these dynamic data is saved in environment variables. Some tests are performed for status code validation.
+
+![cs1](https://github.com/user-attachments/assets/6dd4e885-3d3d-43f4-9f4e-a56fbc4e5851)
+![cs2](https://github.com/user-attachments/assets/088a99c0-6deb-4daa-8894-d2aae493269d)
+
+### Get Specific Student's Info
+GET method is used to fetch a specific student's info.  Some tests are performed for status code, id, first name, middle name, last name, date of birth validation.
+
+![gss1](https://github.com/user-attachments/assets/90967463-f382-4fb7-a432-3060946b6576)
+![gss2](https://github.com/user-attachments/assets/e4e1906f-c251-45ae-888b-94f02c474fbd)
+
+### Create Technical Skills
+POST method is used to create technical skills. Dynamic data is generated using Pre-request script and these dynamic data is saved in environment variables. Some tests are performed for status code validation.
+
+![cts1](https://github.com/user-attachments/assets/147b9fc4-f269-4bd4-abc3-078bd447fb61)
+![cts2](https://github.com/user-attachments/assets/1dd0bf9d-4be8-411d-bde1-b9333ae4af50)
+![cts3](https://github.com/user-attachments/assets/d072edd7-5b82-4218-a598-224fbdc10ccd)
+### Create Student Address
+POST method is used to create student address. Dynamic data is generated using Pre-request script and these dynamic data is saved in environment variables. Some tests are performed for status code, status and message field value validation.
+
+![csa1](https://github.com/user-attachments/assets/91c29ff9-0742-49ec-b23b-e6bb4a28af5f)
+![csa2](https://github.com/user-attachments/assets/54413d76-5971-4488-97c9-3f75d53cb19d)
+![csa3](https://github.com/user-attachments/assets/3bb1a4c6-8fce-425d-bdb4-c89c46ba5c4d)
+
+### Get Final Student Details
+GET method is used to fetch a final student details.  Some tests are performed for status code, Language, Year of Experience, House Number, City, Country, Mobile, Current Address validation.
+
+![gfs1](https://github.com/user-attachments/assets/456d07db-e30e-42d5-834d-b26e8c90c5be)
+![gfs2](https://github.com/user-attachments/assets/725560ec-46e8-471f-bc62-1820f7803ef4)
 ## Report Generation
 ### Process of report generation
 - Install the newman reporter packages by running the following commands in terminal.
@@ -85,8 +125,9 @@ newman run CollectionName.json -e EnvironmentName.json -r cli,htmlextra
 ```
 newman run Tanjina_01634816794.postman_collection.json -e Tanjina_01634816794.postman_environment.json -r cli,htmlextra
 ```
-
-
+![r1](https://github.com/user-attachments/assets/21fb8ffb-0262-4e7b-8f9d-af95e435169c)
+![r2](https://github.com/user-attachments/assets/65c9efe8-7f2c-4c9c-abce-8a6451415624)
+![r3](https://github.com/user-attachments/assets/4065e9be-248f-4395-9be2-344c37e87cf9)
 
 ## Contact
 For questions or feedback, please feel free to reach out:
